@@ -18,8 +18,8 @@ public class Definations {
         throw new io.cucumber.java.PendingException();
     }
 
-    @Then("validation that i am lodgein")
-    public void validation_that_i_am_lodgein() {
+    @Then("validation that i am logein")
+    public void validation_that_i_am_logein() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
