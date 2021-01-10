@@ -17,6 +17,8 @@ public class Login {
     WebElement password;
     @FindBy(how = How.ID, using = "u_0_b")
     WebElement btnlogin;
+    @FindBy(how = How.XPATH, using = "/html/body/div[1]/div[2]/div[1]/div/div[2]/div[2]/form/div/div[1]/div[2]")
+    WebElement l_error;
 
     public void EnterEmail(String abc)
     {
@@ -28,8 +30,13 @@ public class Login {
         password.sendKeys(qwe);
     }
 
-    public void ClickLogin(String qwe)
+    public void ClickLogin()
     {
         btnlogin.click();
+    }
+
+    public String login_error() {
+           String cc = l_error.getText();
+           return cc;
     }
 }

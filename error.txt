@@ -1,0 +1,7 @@
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.
+// add path
+org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=87.0.4280.141)
+  // different driver calling
+org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=87.0.4280.141)
