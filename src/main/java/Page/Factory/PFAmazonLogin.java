@@ -7,13 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class AmazonLogin {
-    public AmazonLogin(WebDriver driver)
+public class PFAmazonLogin {
+    public PFAmazonLogin(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how = How.ID, using = "nav-link-accountList")
+    @FindBy(how = How.ID, using = "icp-touch-link-language")
     WebElement loginPage;
     @FindBy(how = How.NAME, using = "email")
     WebElement usernameAmazon;

@@ -1,14 +1,14 @@
 package StepDefination;
 
-import Page.Factory.AmazonLogin;
+import Page.Factory.PFAmazonLogin;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Definations02 {
-    public AmazonLogin ele;
+public class AmazonLogin {
+    public PFAmazonLogin ele;
     public WebDriver driver;
 
 
@@ -16,7 +16,7 @@ public class Definations02 {
     public void amazon_precondition(){
         System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         driver = new ChromeDriver();
-        ele = new AmazonLogin(driver);
+        ele = new PFAmazonLogin(driver);
         driver.get("https://www.amazon.ca/");
     }
 
