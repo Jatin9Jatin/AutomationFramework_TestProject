@@ -22,3 +22,9 @@ Feature: MyFeatureFile
     Given precondition launching amazon homepage2
     When change country to India
     Then validation country is India
+
+  Scenario: Test 5
+
+    Given precondition launching amazon homepage3
+    When Checking amazon clickable logo
+    Then validation came back to homepage
